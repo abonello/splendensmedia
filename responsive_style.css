@@ -1,0 +1,251 @@
+body {
+    background-image: url('img/bg3.png');
+    color: #000305;
+    font-size: 87.5%; /* Base font size is 14px */
+    font-family: Arial, 'Lucida Sans Unicode';
+    line-height: 1.5;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: #CF5C3F;
+    padding: 0 2%;
+}
+
+a:hover, a:active {
+    background-color: #CF5C3F;
+    /*color: #FFF;*/
+    color: rgb(230, 240, 257);
+    display: inline-block;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    
+}
+
+.body {
+    margin: 0 auto;
+    width: 70%;
+    clear: both; /* I do not see why we need this at this point. */ 
+}
+
+.mainHeader {
+    background-color: rgba(230,240,257,0.7);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.mainHeader img {
+    width: 30%;
+    height: auto;
+    margin: 2% 1%;
+}
+
+.mainHeader nav {
+    background-color: #666;
+    height: 40px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.mainHeader nav ul {
+    list-style: none;
+    margin: 0 auto;
+}
+
+.mainHeader nav ul li {
+    float: left;
+    display: inline;
+}
+
+.mainHeader nav a:link, .mainHeader nav a:visited {
+    /*color: #FFF;*/
+    color: rgb(230, 240, 257);
+    display: inline-block;
+    line-height: 40px;
+    padding: 0 25px;
+}
+
+.mainHeader nav a:hover, .mainHeader nav a:active,
+.mainHeader nav .active a:link, .mainHeader nav .active a:visited {
+    background-color: #CF5C3F;
+}
+
+.mainHeader nav ul li a {
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.mainContent {
+    line-height: 25px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    /*overflow: hidden;*/
+    clear: both;
+}
+
+.content {
+    width: 65%;
+    float: left;
+}
+
+.topContent {
+    /*background-color: #FFF;*/
+    background-color: rgba(230,240,257,0.7);
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 3% 5%;
+    margin-top: 2%;
+}
+
+.bottomContent {
+    /*background-color: #FFF;*/
+    background-color: rgba(230,240,257,0.7);
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 3% 5%;
+    margin-top: 2%;
+}
+
+.postInfo {
+    font-style: italic;
+    color: #999;
+    font-size: 90%;
+}
+
+.topSidebar {
+    width: 22%;
+    float: left;
+    /*background-color: #FFF;*/
+    background-color: rgba(230,240,257,0.7);
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 3% 5%;
+    margin-top: 2%;
+    margin-left: 3%;
+}
+
+.middleSidebar {
+    width: 22%;
+    float: left;
+    /*background-color: #FFF;*/
+    background-color: rgba(230,240,257,0.7);
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 3% 5%;
+    margin-top: 2%;
+    margin-left: 3%;
+}
+
+.bottomSidebar {
+    width: 22%;
+    float: left;
+    /*background-color: #FFF;*/
+    background-color: rgba(230,240,257,0.7);
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 3% 5%;
+    margin-top: 2%;
+    margin-left: 3%;
+}
+
+.mainFooter {
+    clear: both;
+    float: left;
+    width: 100%;
+    height: 40px;
+    background-color: #666;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin: 2% 0;
+}
+
+.mainFooter p {
+    width: 92%;
+    height: 40px;
+    margin: 2% auto;
+    color: #EFF;
+}
+
+/* This is what makes it reactive
+ * Only add items that you want changed.
+*/
+
+@media only screen and (min-width: 150px) and (max-width: 600px) {
+    .body {
+        width: 90%;
+        font-size: 95%;
+    }
+    
+    .mainHeader img {
+        width: 98%;
+    }
+    
+    .mainHeader nav {
+        height: 160px;
+    }
+    
+    .mainHeader nav ul {
+        padding-left: 0;
+    }
+    
+    .mainHeader nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .mainHeader nav a:link, .mainHeader nav a:visited {
+        line-height: 40px;
+        padding: 0 30px;
+        display: block;
+    }
+  
+    .mainContent {
+        line-height: 30px;
+    }
+    
+    .content {
+        width: 100%;
+        float: left;
+        margin-top: 2%;
+    }
+    
+    .postInfo {
+        display: none;
+    }  
+    
+    .topContent {
+        margin-bottom: 4%;
+    }
+    
+    .bottomContent {
+        margin-top: 3%; 
+    }
+
+    .topSidebar, .middleSidebar, .bottomSidebar {
+        width: 90%;
+        padding: 3% 5%;
+        margin-top: 2%;
+        margin-left: 0; 
+    }   
+    
+}
+
+
+
+

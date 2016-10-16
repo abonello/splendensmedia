@@ -1,0 +1,67 @@
+body {
+    padding: 50px;
+    background: rgba(200,0,0,0.7);
+    border: 1px solid black;
+}
+
+.trigger {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #999;
+    background: #FFA720;
+
+}
+
+.trigger > p {
+    position: relative;
+    font-size: 34px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 150px;
+    top: -200px;
+}
+
+.box {
+    position: relative;
+    display: inline-block;
+    background: pink;
+    width: 200px;
+    height: 200px;
+    transition: transform 300ms ease-in-out;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.box p {
+    position: relative;
+    top: -25px;
+    font-size: 34px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 200px;
+}
+
+.trigger:hover > .box {
+    transform: translate(200px, 300px) rotate(20deg);
+}
+
+.trigger:active > .box{
+    transform: translate(1200px, 400px) rotate(-740deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

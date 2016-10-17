@@ -1,6 +1,6 @@
 * {  /* Reset Rule */
-    font-family: serif;
-    font-size: 16px;
+    font-family: arial;
+    font-size: 14px;
     margin: 0;
     padding: 0;
 }
@@ -135,6 +135,7 @@ ul#main_menu, ul.web_menu, ul.sf_menu, ul.audio_menu, ul.audio_menu_sub {
 ul#main_menu li {
     width: 150px;
     text-align: center;
+    text-overflow: clip;
     position: relative;
     float: left;
     margin-right: 4px;
@@ -149,7 +150,7 @@ ul#main_menu a {
     text-decoration: none;
     display: block;
     width: 150px;
-    height: 25px;
+    height: 28px;
     line-height: 25px;
     padding-right: 4px;
     color: white;

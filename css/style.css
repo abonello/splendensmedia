@@ -401,6 +401,19 @@ p.strong:hover {
     font-size: 1.3em;
 }
 
+.left_div ul {
+    margin-bottom: 50px;
+}
+
+.left_div ul li {
+    list-style: square;
+    padding-bottom: 10px;
+    font-size: 1.33em;
+    line-height: 1.5em;
+    word-spacing: 0.3em;
+}
+
+
 .color > header {
     background-color: #93A495;
     position: relative;
@@ -537,3 +550,48 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/* Reactive Media Queries for main page */
+@media (min-width: 700px) and (max-width: 970px){
+    header {
+        background-color: red;
+    }
+    
+    .cover {
+        height: 180px;
+    }
+    
+    header figure {
+        margin: 2px 30px 0 0;
+    }
+    
+    div.menu {
+        display: none;
+    }
+}
+
+@media (max-width: 699px){
+    header {
+        background-color: blue;
+    }
+    
+    .cover {
+        height: 180px;
+    }
+    
+    header figure {
+        display: none;
+    }
+    
+    div.menu {
+        display: none;
+    }
+    
+    div.place1, div.place2, div.place3 {
+
+        width: 90%;
+        margin: 10px auto 0 auto;
+        float: none;
+        left: 0;
+    }
+ 
+}

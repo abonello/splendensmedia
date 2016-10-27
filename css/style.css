@@ -34,8 +34,8 @@ header {
 }
 
 header h1 {
-    font-family: cursive;
-    font-size: 4em;
+    font-family: 'Tangerine', cursive;
+    font-size: 7em;
     float: left;
     line-height: 150px;
     margin-left: 50px;
@@ -406,6 +406,7 @@ p.strong:hover {
 }
 
 .left_div ul li {
+    font-family: 'Exo 2', sans-serif;
     list-style: square;
     padding-bottom: 10px;
     font-size: 1.33em;

@@ -413,6 +413,7 @@ p.strong:hover {
     line-height: 1.5em;
     word-spacing: 0.3em;
     letter-spacing: 0.1em;
+    font-weight: 700;
 }
 
 
